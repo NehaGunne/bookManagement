@@ -1,0 +1,36 @@
+<div id="searchCont" class="text-center">
+    <div id="search" class="d-flex flex-row justify-content-center p-3">
+        <div>
+            <select id="select" class="form-control">
+                <option value="empty">Select</option>
+                <option value="name">Search by Book Name</option>
+                <option value="author">Search by Author</option>
+                <option value="rating">Search by Rating</option>
+                <option value="price">Search by Price</option>
+            </select>
+        </div>
+    </div>
+    <div id="otherThanPrice">
+        <div class="d-flex flex-row justify-content-center p-3">
+            <div>
+                <input id="searchInput" type="text" placeholder="" class="form-control" />
+            </div>
+
+
+        </div>
+    </div>
+    <div id="price" class="d-none">
+        <div class="d-flex flex-row justify-content-center p-3">
+            <input id="priceMin" type="number" placeholder="Enter min price" class="form-control price" />
+            <input id="priceMax" type="number" placeholder="Enter max price" class="form-control price" />
+        </div>
+
+    </div>
+
+    <div class="text-center">
+        <button id="searchBtn" class="btn btn-primary m-2">Search</button>
+        <button id="searchBack" class="btn btn-primary m-2">Back</button>
+    </div>
+
+
+</div>

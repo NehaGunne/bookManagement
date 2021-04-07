@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/884bb7a801.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="cont">
+        <div id="homeCont" class="text-center">
+            <h1 class="book_head m-3">Book Management System</h1>
+            <div class="d-flex flex-row justify-content-end">
+
+                <a href="#" class="links" id="bookList">Books List</a>
+                <a onclick="getSearchPage()" class="links" id="getSearchPage">Search</a>
+                <a onclick="getAddPage()" class="links" id="addPage">Add Book</a>
+            </div>
+
+        </div>
+        <div id="changePage"></div>
+        <div id="table1" class="d-none">
+            <div class="d-flex flex-row justify-content-center p-5 mt-3">
+                <table id="table2">
+                    <th>name</th>
+                    <th>author</th>
+                    <th>Rating</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                    <tbody id="tbody" class=""></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="./home.js"></script>
+    
+</body>
+</html>
